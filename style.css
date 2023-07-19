@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+
+}
+:root{
+    --text-color: #235BA5;
+    --bg-color: #1AB0CE;
+    --hover-color: #F28705;
+}
+ 
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 100px;
+    background-image: url(./bg3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    width: 250px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: var(--bg-color);
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: var(--text-color);
+}
+.content p{
+    padding: 10px 0 5px 0;
+    text-align: center;
+    font-size: 20px;    
+}
+.launch-time{
+    display: flex;
+    justify-content: center;
+}
+.launch-time div{
+    flex-basis: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.launch-time div p{
+    font-size: 60px;
+}
+.move{
+    width: 500px;
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    animation: move 4s linear infinite;
+}
+@keyframes move{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 2;
+    }
+}
+
+.social{
+    position: absolute;
+    bottom: 5%;
+    width: 92vw;
+}
+.wrapper {
+
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+.wrapper a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    letter-spacing: 1px;
+    justify-content: right;
+}
+.wrapper .icon {
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    color: var(--hover-color);
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0a66c2;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .move{
+        width: 450px;
+    }
+    .container{
+        padding: 5px;
+    }
+}
