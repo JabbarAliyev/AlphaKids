@@ -189,6 +189,9 @@ body{
     .content p{
         font-size: 20px;    
     }
+    .launch-time{
+        margin: auto;
+    }
     .launch-time div p{
         font-size: 50px;
     }
