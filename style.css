@@ -190,7 +190,7 @@ body{
         font-size: 20px;    
     }
     .launch-time{
-        margin: auto;
+        justify-content: center;
     }
     .launch-time div p{
         font-size: 50px;
