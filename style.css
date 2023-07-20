@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'League Spartan', sans-serif;
-
+}
+body{
+    background-image: url(./bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 :root{
     --text-color: #235BA5;
@@ -13,7 +17,7 @@
     width: 100vw;
     height: 100vh;
     padding-left: 100px;
-    background-image: url(./bg3.png);
+
     background-position: center;
     background-size: cover;
     position: relative;
@@ -152,12 +156,14 @@
     background: #1877F2;
     color: #ffffff;
 }
+
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
     background: #E4405F;
     color: #ffffff;
 }
+
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
@@ -165,12 +171,22 @@
     color: #ffffff;
 }
 
-
 @media(max-width:768px){
     .move{
         width: 450px;
     }
     .container{
         padding: 5px;
+    }
+    .content h1{
+        text-align: center;
+        font-size: 54px;
+        font-weight: 500;
+    }
+    .content p{
+        font-size: 20px;    
+    }
+    .launch-time div p{
+        font-size: 50px;
     }
 }
