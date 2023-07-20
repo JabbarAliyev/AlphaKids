@@ -176,14 +176,15 @@ body{
         overflow: hidden;
     }
     .move{
-        width: 450px;
+        width: 350px;
+        right: 2%;
     }
     .container{
         padding: 5px;
     }
     .content h1{
         text-align: center;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 500;
     }
     .content p{
