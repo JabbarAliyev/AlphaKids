@@ -201,7 +201,7 @@ body{
 @media screen and (max-width: 480px) {
     .move{
         width: 350px;
-        right: 2%;
+        right: 4%;
     }
     .content h1{
         text-align: center;
